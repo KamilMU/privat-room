@@ -3,4 +3,8 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 

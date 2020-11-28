@@ -56,7 +56,9 @@ function SideBar(props) {
             <span>Помощь</span>
           </a>
         </div>
-        <img src={require("../pics/logo.png")} alt="" />
+        <a href="#">
+          <img src={require("../pics/logo.png")} alt="" />
+        </a>
       </div>
     </div>
   );

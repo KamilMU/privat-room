@@ -1,14 +1,18 @@
 .header {
   background: #50CAFF;
-  /* padding: 12px 40px; */
   width: 100%;
 }
 
 .content {
   margin: 0 auto;
+  width: 100%;
   max-width: 1310px;
+}
+
+.header__content {
   padding: 5px 0;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
