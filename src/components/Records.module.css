@@ -1,0 +1,13 @@
+.records__content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.records__left {
+  width: 80%;
+}
+
+.records__left ul {
+  display: flex;
+}

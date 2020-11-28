@@ -1,0 +1,14 @@
+.mainContent {
+  background: #FCFCFC;;
+  width: 100%;
+}
+
+.mainContent__content {
+  /* padding: 20px; */
+  width: 100%;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1310px;
+}

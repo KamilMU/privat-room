@@ -1,0 +1,137 @@
+.ecards {
+  padding-top: 35px;
+}
+
+.ecards__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.ecards__list  > li {
+  width: 48%;
+  height: 183px;
+  font-style: normal;
+  font-weight: normal;
+  cursor: pointer;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  display: flex;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px #EBE7FF;
+  border-radius: 5px;
+}
+
+.ecards__list > li:hover {
+  border: 3px solid #50CAFF;
+}
+
+.ecard {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+
+.ecard__tittle {
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.ecard__tittle::before {
+  content: '';
+  background-color: #EBE7FF;;
+  position: absolute;
+  top: 40px;
+  height: 2px;
+  width: 100%;
+}
+
+.ecard:hover .ecard__tittle::before {
+  background-color: #50CAFF;
+}
+
+.ecard__description {
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  width: 95%;
+}
+
+.description__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.description__list li::before {
+  content: "\2022";  
+  color: #EBE7FF;; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+
+.ecard:hover .description__list::before {
+  color: #50CAFF;
+}
+
+.ecard__left {
+  padding: 67px 47px;
+  background: #EBE7FF;;
+}
+
+.ecard:hover .ecard__left {
+  background: #50CAFF;
+}
+
+.ecard__right {
+  padding: 20px 37px;
+}
+
+/* active ecard */
+
+.active {
+  width: 100%;
+}
+
+.active .ecard__left {
+  background-color: #50CAFF;
+}
+
+.active .ecard__left {
+  background-color: #50CAFF;
+}
+
+.active .ecard__tittle::before {
+  content: '';
+  background-color: #50CAFF;
+  position: absolute;
+  top: 40px;
+  height: 2px;
+  width: 100%;
+}
+
+.active .description__list li::before {
+  content: "\2022";  
+  color: #50CAFF; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+
+@media (max-width: 1420) {
+  .ecards__list {
+    flex-direction: column;
+  }
+}
